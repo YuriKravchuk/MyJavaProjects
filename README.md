@@ -1,1 +1,3 @@
 # MyJavaProjects
+
+Привіт, світ!
