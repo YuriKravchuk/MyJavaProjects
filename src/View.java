@@ -14,8 +14,9 @@ public class View {
             System.out.println("Обери команду:");
             System.out.println("1 - Зашифрувати файл");
             System.out.println("2 - Розшифрувати файл");
-            System.out.println("3 - Спробувати розкодувати за допомогою Bruteforce");
-            System.out.println("4 - Вийти з програми");
+            System.out.println("3 - Спробувати розшифрувати за допомогою Bruteforce");
+            System.out.println("4 - Спробувати розшифрувати за допомогою статистичного аналізу");
+            System.out.println("5 - Вийти з програми");
             if (scanner.hasNextInt()){
                 return scanner.nextInt();
             } else {
@@ -57,7 +58,12 @@ public class View {
             case  2, 3:
                 System.out.println("OK ... Буду розшифровувати файл.");
                 return true;
-            case 4:
+            case  4:
+                System.out.println("OK ... Буду розшифровувати файл.");
+                System.out.println("Для статистики взято букви \"а, в, и, о, н\" - які повинні бути > 4%");
+                System.out.println("і букви \"щ, ф, є, ї, ґ, ц, ж\" - які повинні бути меньші 1%");
+                return true;
+            case 5:
                 System.out.println("Бувай!");
                 System.exit(0);
             default:

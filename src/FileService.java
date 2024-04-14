@@ -25,6 +25,7 @@ public class FileService {
             case 1: return "[ENCRYPT]";
             case 2: return "[DECRYPT]";
             case 3: return "[BRUTEFORCE_DECRYPT]";
+            case 4: return "[STATISTIC_DECRYPT]";
             default: return "";
         }
     }

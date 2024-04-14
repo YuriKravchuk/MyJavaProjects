@@ -17,7 +17,7 @@ public class CaesarCode {
                         newCharIndex = newCharIndex - symbols.size();
                     }
                     return symbols.get(newCharIndex);
-                case 2, 3: // DECRYPT
+                case 2, 3, 4: // DECRYPT
                         newCharIndex = newCharIndex - key;
                         if (newCharIndex < 0) {
                             newCharIndex = symbols.size() + newCharIndex;

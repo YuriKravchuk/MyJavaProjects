@@ -7,6 +7,8 @@ import java.util.Formatter;
 public class Bruteforce {
     public static int BruteForceKey (String path){
         Path tempPath = Path.of("Temp.txt").toAbsolutePath();
+        int maxCountOfSpace = 0;
+        int tempKey = -1;
         for (int i = 0; i < SymbolsTable.getListOfSymbols().size(); i++) {
                 try(FileReader reader = new FileReader(path.toString());
                     FileWriter writer = new FileWriter(tempPath.toString()))
@@ -22,16 +24,23 @@ public class Bruteforce {
                     while (bufferedReader.ready()){
                         txtFileToString = txtFileToString + bufferedReader.readLine();
                     }
-                    if (txtFileToString.contains(", ")){
-                        System.out.println("Файл розшифровано. Ключ для розшифрування: " + i);
-                        Files.delete(tempPath);
-                        return i;
-                    }
 
+                    int countOfSpaces = txtFileToString.length() - txtFileToString.replaceAll(" ","").length();
+                    if (countOfSpaces > maxCountOfSpace) {
+                        maxCountOfSpace =countOfSpaces;
+                        tempKey = i;
+                    }
+                    Files.delete(tempPath);
+                    bufferedReader.close();
                 } catch (Exception e){
                     e.printStackTrace();
                 }
         }
-        return -1;
+        if (tempKey != -1){
+            System.out.println("Файл розшифровано. Ключ для розшифрування: " + tempKey);
+            return tempKey;
+        } else {
+            return -1;
+        }
     }
 }

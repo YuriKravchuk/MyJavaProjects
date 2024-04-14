@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abb07105-48ab-4584-91db-5e3eb6c30edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CesarCode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bruteforce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaesarCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SymbolsTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
+    <list default="true" id="abb07105-48ab-4584-91db-5e3eb6c30edf" name="Changes" comment="Console coder. Beta 1.0">
+      <change afterPath="$PROJECT_DIR$/src/StatisticAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bruteforce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bruteforce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaesarCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaesarCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -58,6 +57,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Volumes/Other/JavaProj/CesarCode",
     "onboarding.tips.debug.path": "/Volumes/Other/JavaProj/CesarCode/src/Main.java",
     "settings.editor.selected.configurable": "project.propGUI"
   }
@@ -107,7 +107,20 @@
       <option name="presentableId" value="Default" />
       <updated>1712151920722</updated>
     </task>
+    <task id="LOCAL-00001" summary="Console coder. Beta 1.0">
+      <option name="closed" value="true" />
+      <created>1712611630504</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712611630504</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Console coder. Beta 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Console coder. Beta 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -11,7 +11,7 @@ public class Controller {
                 int command = view.printMenu();
                 if (view.printCommandResult(command)) {
                     String path = view.enterPath();
-                    int key = (command != 3) ? view.enterKey() : Bruteforce.BruteForceKey(path);
+                    int key = (command != 3 && command != 4) ? view.enterKey() : ((command == 3) ? Bruteforce.BruteForceKey(path) : StatisticAnalysis.StatisticKey(path));
                     if (key != -1) {
                         service = new FileService(path, command, key);
                         view.printResult(service.isDone());
